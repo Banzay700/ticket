@@ -136,10 +136,6 @@
         justify-content: center;
       }
 
-      .big {
-        padding: 20px 0;
-      }
-
       .large {
         padding: 15px 0;
       }
@@ -182,8 +178,8 @@
       width: 100%;
     }
 
-    .margin-bottom-10 {
-      margin-bottom: 10px;
+    .margin-bottom-xs {
+      margin-bottom: 3px;
     }
 
     .border-top-none {
@@ -210,20 +206,28 @@
       justify-content: space-around;
     }
 
-    .gap5px {
-      gap: 5px;
+    .gap-xs {
+      gap: 3px;
     }
 
-    .gap10px {
+    .gap-m {
       gap: 10px;
     }
 
-    .gap15px {
+    .gap-l {
       gap: 15px;
     }
 
-    .gap20px {
+    .gap-xl {
       gap: 20px;
+    }
+
+    .font-size-xs {
+      font-size: 11px;
+    }
+
+    .font-size-s {
+      font-size: 13px;
     }
 
     @media screen {
@@ -282,45 +286,45 @@
           <!-- MAIN -->
           <div class="main">
             <!-- LEFT INFO BLOCK -->
-            <div class="block left-block flex column gap15px">
+            <div class="block left-block flex column gap-l">
               <div class="flex space-between">
-                <div class="flex column gap10px">
+                <div class="flex column gap-m">
                   <div>Дата/Date:</div>
                   <div class="text">текст</div>
                 </div>
-                <div class="flex column gap10px">
+                <div class="flex column gap-m">
                   <div>Дата/Date:</div>
                   <div class="text">текст</div>
                 </div>
               </div>
-              <div class="flex column gap10px">
+              <div class="flex column gap-m">
                 <div>Номер квитка/Ticket number:</div>
                 <div class="text">текст</div>
               </div>
-              <div class="flex column gap10px">
+              <div class="flex column gap-m">
                 <div>Номер рейсу/Cruise number:</div>
                 <div class="text">текст</div>
               </div>
-              <div class="flex column gap10px">
+              <div class="flex column gap-m">
                 <div>Ім’я та прізвище/Name:</div>
                 <div class="text">текст</div>
               </div>
-              <div class="flex column gap10px">
+              <div class="flex column gap-m">
                 <div>Номер місця/Place number:</div>
                 <div class="text">текст</div>
               </div>
-              <div class="flex column gap10px">
+              <div class="flex column gap-m">
                 <div>Ціна/Price:</div>
                 <div class="text">текст</div>
               </div>
             </div>
             <!-- RIGHT INFO BLOCK -->
-            <div class="block right-block flex column gap10px">
+            <div class="block right-block flex column gap-m">
               <!-- TICKET NUMBER AND QR -->
               <div class="flex space-between">
-                <div class="flex column gap15px">
+                <div class="flex column gap-l">
                   <h2 class="uppercase">Квиток/Ticket <span class="highlight">№</span></h2>
-                  <div class="flex column gap10px">
+                  <div class="flex column gap-m">
                     <h3>Рейс <span class="highlight"> № 000 </span>Прага - Київ</h3>
                     <h3>Cruise <span class="highlight">№ 000</span> Прага - Київ</h3>
                   </div>
@@ -350,23 +354,23 @@
                   </svg>
                 </div>
               </div>
-              <!-- FIRST TABLE BLOCK -->
-              <div class="flex column gap5px margin-bottom-10">
-                <div class="flex column gap5px">
+              <!-- TABLE BLOCK -->
+              <div class="flex column gap-xs margin-bottom-xs">
+                <div class="flex column gap-xs">
                   <div class="table-header-wrapper">
                     <div class="table-header">Траса/Routing:</div>
-                    <div class="flex gap20px">
+                    <div class="flex gap-xl">
                       <div class="table-header">Дата/Date:</div>
                       <div class="table-header">Час/Time:</div>
                     </div>
                   </div>
-                  <div class="flex gap5px">
+                  <div class="flex gap-xs">
                     <div class="table-cell flex-1 large">
                       <p><span class="highlight">Брно</span> автовокзал “Zvonarka”, платформа №40</p>
                     </div>
                     <div class="flex column flex-1">
                       <div class="table-header">Відправлення/Departure:</div>
-                      <div class="flex gap5px">
+                      <div class="flex gap-xs">
                         <div class="table-cell border-top-none full-width medium">
                           <span class="highlight">16.05.2019</span>
                         </div>
@@ -377,14 +381,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="flex column gap5px">
-                  <div class="flex gap5px">
+                <div class="flex column gap-xs">
+                  <div class="flex gap-xs">
                     <div class="table-cell flex-1 large">
                       <p><span class="highlight">Брно</span> автовокзал “Zvonarka”, платформа №40</p>
                     </div>
                     <div class="flex column flex-1">
                       <div class="table-header">Прибуття/Arrival:</div>
-                      <div class="flex gap5px">
+                      <div class="flex gap-xs">
                         <div class="table-cell border-top-none full-width medium">
                           <span class="highlight">17.05.2019</span>
                         </div>
@@ -397,10 +401,10 @@
                 </div>
               </div>
               <!-- TABLE BLOCK -->
-              <div class="flex column gap5px">
-                <div class="flex gap5px">
+              <div class="flex column gap-xs">
+                <div class="flex gap-xs">
                   <div class="flex column flex-1">
-                    <div class="table-header">Вид вартості/Reduction:</div>
+                    <div class="table-header font-size-s">Вид вартості/Reduction:</div>
                     <div class="table-cell small"><span class="highlight">стандартний</span></div>
                   </div>
                   <div class="flex column flex-1">
@@ -408,13 +412,15 @@
                     <div class="table-cell small"><span class="highlight">текст</span></div>
                   </div>
                   <div class="flex column flex-1">
-                    <div class="table-header">Вид вартості/Reduction:</div>
+                    <div class="table-header">Спосіб оплати/ Payment Method:</div>
                     <div class="table-cell small"><span class="highlight">текст</span></div>
                   </div>
                 </div>
-                <div class="flex gap5px">
+                <div class="flex gap-xs">
                   <div class="flex column flex-1">
-                    <div class="table-header">Номер дисконтної картки ТТ/Number discount card:</div>
+                    <div class="table-header font-size-xs">
+                      Номер дисконтної картки ТТ/Number discount card:
+                    </div>
                     <div class="table-cell small"><span class="highlight">текст</span></div>
                   </div>
                   <div class="flex column flex-1">
@@ -426,22 +432,21 @@
                     <div class="table-cell small"><span class="highlight">Toptick - et</span></div>
                   </div>
                 </div>
-              </div>
-              <!-- TABLE BLOCK -->
-              <div class="flex column">
-                <div class="table-header">Контакти перевізника</div>
-                <div class="table-cell medium">
-                  <div class="flex space-around full-width">
-                    <span class="highlight">Номер</span>
-                    <span class="highlight">Номер</span>
-                    <span class="highlight">Номер</span>
+                <div class="flex column">
+                  <div class="table-header">Контакти перевізника</div>
+                  <div class="table-cell medium">
+                    <div class="flex space-around full-width">
+                      <span class="highlight">Номер</span>
+                      <span class="highlight">Номер</span>
+                      <span class="highlight">Номер</span>
+                    </div>
                   </div>
                 </div>
               </div>
               <!-- TABLE BLOCK -->
               <div class="flex column">
                 <div class="table-header">Багаж</div>
-                <div class="table-cell big">
+                <div class="table-cell large">
                   <span class="highlight">Текст</span>
                 </div>
               </div>
